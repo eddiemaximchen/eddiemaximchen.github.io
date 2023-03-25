@@ -1971,24 +1971,36 @@ button,
   #sidebar.inactive {
     margin-left: -26em; }
   @media screen and (max-width: 1680px) {
-    #sidebar {
-      width: 24em; }
+   #sidebar {
+      box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 0;
+      z-index: 10000; }
+      #sidebar.inactive {
+        box-shadow: none; }
       #sidebar > .inner {
-        padding: 1.66667em 1.66667em 1.33333em 1.66667em ;
-        width: 24em; }
-        #sidebar > .inner > .alt {
-          margin: -1.66667em 0 3.33333em -1.66667em;
-          padding: 1.66667em;
-          width: calc(100% + 3.33333em); }
+        -webkit-overflow-scrolling: touch;
+        height: 100%;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: absolute;
+        top: 0; }
+        #sidebar > .inner:after {
+          content: '';
+          display: block;
+          height: 4em;
+          width: 100%; }
       #sidebar .toggle {
-        height: 6.25em;
-        left: 24em;
-        line-height: 6.25em;
-        text-indent: 5em;
-        width: 5em; }
+        text-indent: 6em;
+        width: 6em; }
         #sidebar .toggle:before {
-          font-size: 1.5rem; }
-        }
+          font-size: 1.5rem;
+          margin-left: -0.4375em; }
+      body.is-preload #sidebar {
+        display: none; } }
   @media screen and (max-width: 1280px) {
     #sidebar {
       box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
