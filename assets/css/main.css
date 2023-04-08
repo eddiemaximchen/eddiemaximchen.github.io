@@ -1355,6 +1355,9 @@ ul.icons {
       padding-right: 0; }
     ul.icons li .icon {
       color: inherit; }
+    ul.icons li .icon:before {
+      font-size: 1.25em; }
+
       ul.icons a{
    	color:black;
    	font-size: 20px;
