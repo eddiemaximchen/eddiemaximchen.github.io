@@ -1355,20 +1355,19 @@ ul.icons {
       padding-right: 0; }
     ul.icons li .icon {
       color: inherit; }
-    ul.icons li .icon:before {
-      font-size: 1.25em; }
-
       ul.icons a{
-   	color:black;
-   	font-size: 20px;
-	background: #f1f1f1;
-   	margin: 0 5px;
-   	border-radius: 50%;
-   	position: relative;
-	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-	transition: .8s;}
+        color:black;
+        font-size: 20px;
+        background: #f1f1f1;
+        margin: 0 5px;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        transition: .8s;
+      }
       ul.icons a:hover{
-   	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);}
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
 /* Contact */
 ul.contact {
   list-style: none;
@@ -2205,7 +2204,8 @@ button,
     font-size: 1.2em;
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
-      color: #f56a6a; }
+      color: #f56a6a; 
+      }
     #menu ul a.opener, #menu ul span.opener {
       -moz-transition: color 0.2s ease-in-out;
       -webkit-transition: color 0.2s ease-in-out;
