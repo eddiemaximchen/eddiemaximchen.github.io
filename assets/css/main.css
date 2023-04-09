@@ -5,13 +5,6 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-li:hover{
-  color:blue;
-}
-.gif{
-  height: 10%;
-  width: 10%;
-}
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1198,7 +1191,7 @@ input[type="radio"] + label:before {
   border-bottom: none;
   position: relative; }
   .icon:before {
-    -moz-osx-font-smoothing:grayscale;
+    -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
     font-style: normal;
@@ -1360,7 +1353,18 @@ ul.icons {
       color: inherit; }
       ul.icons li .icon:before {
         font-size: 1.25em; }
-
+      ul.icons a{
+        color:black;
+        font-size: 20px;
+        background: #f1f1f1;
+        margin: 0 5px;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        transition: .8s;}
+      ul.icons a:hover{
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);}
+             
 /* Contact */
 ul.contact {
   list-style: none;
@@ -1887,6 +1891,41 @@ button,
         padding: 3em 0 1em 0 ; } }
 
 /* Sidebar */
+#search form {
+  text-decoration: none;
+  position: relative; }
+  #search form:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    text-transform: none !important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; }
+  #search form:before {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+    color: #7f888f;
+    content: '\f002';
+    cursor: default;
+    display: block;
+    font-size: 1.5em;
+    height: 2em;
+    line-height: 2em;
+    opacity: 0.325;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 2em; }
+  #search form input[type="text"] {
+    padding-right: 2.75em; }
+
 #sidebar {
   -moz-flex-grow: 0;
   -webkit-flex-grow: 0;
@@ -1971,36 +2010,25 @@ button,
   #sidebar.inactive {
     margin-left: -26em; }
   @media screen and (max-width: 1680px) {
-   #sidebar {
-      box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
-      height: 100%;
-      left: 0;
-      position: fixed;
-      top: 0;
-      z-index: 10000; }
-      #sidebar.inactive {
-        box-shadow: none; }
+    #sidebar {
+      width: 24em; }
       #sidebar > .inner {
-        -webkit-overflow-scrolling: touch;
-        height: 100%;
-        left: 0;
-        overflow-x: hidden;
-        overflow-y: auto;
-        position: absolute;
-        top: 0; }
-        #sidebar > .inner:after {
-          content: '';
-          display: block;
-          height: 4em;
-          width: 100%; }
+        padding: 1.66667em 1.66667em 1.33333em 1.66667em ;
+        width: 24em; }
+        #sidebar > .inner > .alt {
+          margin: -1.66667em 0 3.33333em -1.66667em;
+          padding: 1.66667em;
+          width: calc(100% + 3.33333em); }
       #sidebar .toggle {
-        text-indent: 6em;
-        width: 6em; }
+        height: 6.25em;
+        left: 24em;
+        line-height: 6.25em;
+        text-indent: 5em;
+        width: 5em; }
         #sidebar .toggle:before {
-          font-size: 1.5rem;
-          margin-left: -0.4375em; }
-      body.is-preload #sidebar {
-        display: none; } }
+          font-size: 1.5rem; }
+      #sidebar.inactive {
+        margin-left: -24em; } }
   @media screen and (max-width: 1280px) {
     #sidebar {
       box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
@@ -2204,7 +2232,7 @@ button,
       -ms-transition: color 0.2s ease-in-out;
       transition: color 0.2s ease-in-out;
       text-decoration: none;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
       position: relative; }
       #menu ul a.opener:before, #menu ul span.opener:before {
         -moz-osx-font-smoothing: grayscale;
@@ -2215,6 +2243,7 @@ button,
         text-rendering: auto;
         line-height: 1;
         text-transform: none !important;
+        font-family: 'Font Awesome 5 Free';
         font-weight: 900; }
       #menu ul a.opener:before, #menu ul span.opener:before {
         -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
