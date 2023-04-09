@@ -2201,7 +2201,7 @@ button,
     border-bottom: 0;
     color: inherit;
     cursor: pointer;
-    display: block;
+    display: inline-block;
     font-size: 1.2em;
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
