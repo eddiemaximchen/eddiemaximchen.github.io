@@ -1360,10 +1360,10 @@ ul.icons {
         margin: 0 5px;
         border-radius: 50%;
         position: relative;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         transition: .8s;}
       ul.icons a:hover{
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);}
+        box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);}
              
 /* Contact */
 ul.contact {
