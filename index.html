@@ -45,38 +45,55 @@
 				  text-shadow: -0.08em 0.03em 0.12em rgba(0,0,0,0.7);}
 			.overlap:not(:first-child){
 				  margin-left: -0.18em;}
-			.title-word {
+			.waviy {
+  				  position: relative;
+  				  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  				  font-size: 20px;
+				  margin-right: 3px;
+				  
+			}
+			.waviy b {
+  				  position: relative;
+  				  display: inline-block;
+  				  color: #000000;
 				  animation: color-animation 4s linear infinite;
-				  font-size:1vw;}
+			}
+
 			.title-word-1 {
-				  --color-1: #DF8453;
-				  --color-2: #3D8DAE;
-				  --color-3: #E4A9A8;}
+			--color-1: #DF8453;
+			--color-2: #3D8DAE;
+			--color-3: #E4A9A8;
+			}
+
 			.title-word-2 {
-				  --color-1: #DBAD4A;
-				  --color-2: #ACCFCB;
-				  --color-3: #17494D;}
+			--color-1: #DBAD4A;
+			--color-2: #ACCFCB;
+			--color-3: #17494D;
+			}
+
 			.title-word-3 {
-				  --color-1: #ACCFCB;
-				  --color-2: #E4A9A8;
-				  --color-3: #ACCFCB;}
+			--color-1: #ACCFCB;
+			--color-2: #E4A9A8;
+			--color-3: #ACCFCB;
+			}
+
 			.title-word-4 {
-				  --color-1: #3D8DAE;
-				  --color-2: #DF8453;
-				  --color-3: #E4A9A8;}
+			--color-1: #3D8DAE;
+			--color-2: #DF8453;
+			--color-3: #E4A9A8;
+			}
+
 			@keyframes color-animation {
-				  0%    {color: var(--color-1)}
-				  32%   {color: var(--color-1)}
-				  33%   {color: var(--color-2)}
-				  65%   {color: var(--color-2)}
-				  66%   {color: var(--color-3)}
-				  99%   {color: var(--color-3)}
-				  100%  {color: var(--color-1)}}
-			.title{
-				  font-family: "Montserrat", sans-serif;
-/* 				  font-weight: 800; */
-				  font-size: 20px;
-				  text-transform: uppercase;}
+			0%    {transform: translateY(0);color: var(--color-1)}
+			20%	  {transform: translateY(-20px);color: var(--color-1)}
+			32%   {color: var(--color-1)}
+			33%   {color: var(--color-2)}
+			40%   {transform: translateY(0);color: var(--color-2)}
+			65%   {color: var(--color-2)}
+			66%   {color: var(--color-3)}
+			99%   {color: var(--color-3)}
+			100%  {transform: translateY(0);color: var(--color-3)}
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -92,9 +109,9 @@
 							<!-- Header -->
 								<header id="header">
 									<ul class="icons" style="color: black;">
-										<li id="visits"></li>
+										<li id="visits" class='color'></li>
 										<li>visits</li>
-										<li class='color'> Let'stalk</li>
+										<li class="waviy"> Let's <b style="--i:1" class="title-word-1">t</b><b style="--i:2" class="title-word-2">a</b><b style="--i:3" class="title-word-3">l</b><b style="--i:4" class="title-word-4">k</b></li>
 										<a href="mailto:eddie.hsinyu@gmail.com""><li class="fa-solid fa-envelope"></li></a>
 										<a href="https://line.me/ti/p/d7DBjF3dNQ"><li class="fa-brands fa-line"></li></a>
 										<a href="https://wa.me/qr/PXU4WCZ5DYLHG1"><li class="fa-brands fa-whatsapp"></li></a>
