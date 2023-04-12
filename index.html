@@ -43,9 +43,35 @@
 				  font-size: 5vw;
 				  transform: translate(-50%,-50%);
 				  text-shadow: -0.08em 0.03em 0.12em rgba(0,0,0,0.7);}
-.overlap:not(:first-child){
-	margin-left: -0.18em;
-}
+			.overlap:not(:first-child){
+				  margin-left: -0.18em;}
+			.title-word {
+				  animation: color-animation 4s linear infinite;
+				  font-size:1vw;}
+			.title-word-1 {
+				  --color-1: #DF8453;
+				  --color-2: #3D8DAE;
+				  --color-3: #E4A9A8;}
+			.title-word-2 {
+				  --color-1: #DBAD4A;
+				  --color-2: #ACCFCB;
+				  --color-3: #17494D;}
+			.title-word-3 {
+				  --color-1: #ACCFCB;
+				  --color-2: #E4A9A8;
+				  --color-3: #ACCFCB;}
+			.title-word-4 {
+				  --color-1: #3D8DAE;
+				  --color-2: #DF8453;
+				  --color-3: #E4A9A8;}
+			@keyframes color-animation {
+				  0%    {color: var(--color-1)}
+				  32%   {color: var(--color-1)}
+				  33%   {color: var(--color-2)}
+				  65%   {color: var(--color-2)}
+				  66%   {color: var(--color-3)}
+				  99%   {color: var(--color-3)}
+				  100%  {color: var(--color-1)}}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -61,9 +87,7 @@
 							<!-- Header -->
 								<header id="header">
 									<ul class="icons" style="color: black;">
-										<li id="visits"></li>
-										<li>visits</li>
-										<li class="color">Let's talk</li>
+										<li id="visits" class="title-word title-word-1"></li><li class="title-word title-word-2">visits</li><li class="title-word title-word-3">Let's</li><li class="title-word title-word-4"> talk</li>
 										<a href="mailto:eddie.hsinyu@gmail.com""><li class="fa-solid fa-envelope"></li></a>
 										<a href="https://line.me/ti/p/d7DBjF3dNQ"><li class="fa-brands fa-line"></li></a>
 										<a href="https://wa.me/qr/PXU4WCZ5DYLHG1"><li class="fa-brands fa-whatsapp"></li></a>
