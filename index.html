@@ -94,6 +94,24 @@
 			99%   {color: var(--color-3)}
 			100%  {transform: translateY(0);color: var(--color-3)}
 			}
+			mark {
+				-webkit-animation: 1s highlight 1s 1 normal forwards;
+				animation: 1s highlight 1s 1 normal forwards;
+				background-color: none;
+				background: linear-gradient(90deg, pink 50%, rgba(255, 255, 255, 0) 50%);
+				background-size: 200% 100%;
+				background-position: 100% 0;
+			}
+			@-webkit-keyframes highlight {
+				to {
+					background-position: 0 0;
+				}
+			}
+			@keyframes highlight {
+				to {
+					background-position: 0 0;
+				}
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -132,15 +150,15 @@
 										</header>
 										<p><h2>Near Future Plan<img src="images/study.gif" height="100px"></h2></p>
 										<p><b><span class="first-letter">I</span> always know how to put together what I learn and you can see that in my works. I also plan to learn more about java language and bash scripts in the coming months, not just the fundamental.</b></p>
-										<p><b>202305:bash script and spark</b></p>
-										<p><b>202306~07:java and OCPJP-SE11a certification test.</b></p>
+										<p><b><mark>202305:bash script and spark</mark></b></p>
+										<p><b><mark>202306~07:java and OCPJP-SE11a certification test.</mark></b></p>
 										<p><h2>Work Experience<img src="images/working.gif" height="100px"></h2></p>
 										<p><b>202210:</b> Studying web page and Big Data skills</p>
 										<p><b>201908:</b> Unicore hospital again hits new milestone.</p>
-										<p><b style="background-color:pink;">201906:Comlete a contract worths 1 million NTD.</b>With this contract as a seed, following monthly revenue would grow at least 30%.</p>
+										<p><b><mark>201906:Comlete a contract worths 1 million NTD.</mark></b>With this contract as a seed, following monthly revenue would grow at least 30%.</p>
 										<p><b>201808:</b> Within 4 months, 0 cost, I put a 1yr old animal hospital on the cover story of a well-known national-wide business magazine.</p>
-										<p><b style="background-color:pink;">201609:completed the first and biggest android smart watch project at compal electronics</b> smart device business group(SDBG).In the process, successfully worked with Google and Fossil, which is a traditional watch brand at that time. 
-										<p><b>Character:</b> Always looking for the shortest possible way to solve issues.Even routine errands.For example:<b style="background-color:pink;">Cut accounting report lead time from 2hr to 30 sec using excel programming(VBA).</b></p>										
+										<p><b><mark>201609:completed the first and biggest android smart watch project at compal electronics</mark></b> smart device business group(SDBG).In the process, successfully worked with Google and Fossil, which is a traditional watch brand at that time. 
+										<p><b>Character:</b> Always looking for the shortest possible way to solve issues.Even routine errands.For example:<b><mark>Cut accounting report lead time from 2hr to 30 sec using excel programming(VBA).</mark></b></p>										
 										<ul class="actions">
 											<li><a href="https://www.linkedin.com/in/eddie-chen-49a5b486/" target=”_blank” class="button">Learn More on my linkedin</a></li>
 										</ul>
