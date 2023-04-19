@@ -104,7 +104,7 @@ body, input, select, textarea {
       font-size: 15pt;} }
   @media screen and (max-width: 360px) {
     body, input, select, textarea {
-      font-size: 12pt;} }
+      font-size: 9pt;} }
 
 a {
   -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
