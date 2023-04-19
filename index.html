@@ -282,8 +282,17 @@
 									<header class="major">
 									<a name="work" id="work"></a>
 										<h2>My works<img src="images/work.png" height="100px"></h2>
+										<select id="work" onchange="show()">
+											<option value="All">All</option>
+											<option value="ChatGPT">ChatGPT</option>
+											<option value="Python">Python</option>
+											<option value="Python game">Python game</option>
+											<option value="Ajax">Ajax</option>
+											<option value="Flask">Flask</option>
+											<option value="Docker-hadoop">Docker-hadoop</option>
+										</select>
 									</header>
-									<div class="posts">
+									<div class="posts" id="posts">
 										<article data-filter="ChatGPT">
 											<img src="images/flask.jpg" style="width:416px">
 											<h3>voice chatGPT</h3>
