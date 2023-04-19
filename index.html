@@ -284,7 +284,7 @@
 										<h2>My works<img src="images/work.png" height="100px"></h2>
 									</header>
 									<div class="posts">
-										<article>
+										<article data-filter="ChatGPT">
 											<img src="images/flask.jpg" style="width:416px">
 											<h3>voice chatGPT</h3>
 											<p>Type your thought and get a voice response</p>
@@ -293,35 +293,35 @@
 												<li><a href="https://drive.google.com/file/d/1-qbMQKet7IHW_b8Qny6VW3lxLUderWkg/view" target=”_blank” class="button">flask demo</a></li>
 											</ul>
 										</article>
-										<article >
+										<article data-filter="Python">
 											<img src="images/bounce.gif" style="width:416px">
 											<h3>animation written by python</h3>
 											<ul class="actions">
 												<li><a href='https://drive.google.com/file/d/1NFfd9Yf3HoWlNhuhddS5KqE8eWtV3l9o/view' target=”_blank” class="button">Demo</a></li>
 											</ul>
 										</article>
-										<article>
+										<article data-filter="Python game">
 											<img src="images/ballongame.png" style="width:416px">
 											<h3>python ballon shooting game</h3>
 											<ul class="actions">
 												<li><a href='https://drive.google.com/file/d/1K4a2dtZU1fMtBHeX_0PmHeSRRvA4pzqw/view' target=”_blank” class="button">Demo</a></li>
 											</ul>
 										</article>
-										<article>
+										<article data-filter="Python game">
 											<img src="images/dodger.png" style="width:416px">
 											<h3>python game with transition scenes</h3>
 											<ul class="actions">
 												<li><a href='https://user-images.githubusercontent.com/122704850/229752861-f678394f-72cf-4ebb-b7e4-f43bd0125718.webm' target=”_blank” class="button">Demo</a></li>
 											</ul>
 										</article>
-										<article>
+										<article data-filter="Python">
 											<img src="images/tkinter.gif" style="width:416px">
 											<h3>Use python native tkinter to build a GUI</h3>
 											<ul class="actions">
 												<li><a href="https://drive.google.com/file/d/13uMQNDORV1Q6N4Cs9dTJ_Nw5IkOznyBX/view" target=”_blank” class="button">Demo</a></li>   
 											</ul>
 										</article>
-										<article>
+										<article data-filter="Ajax">
 											<img src="https://user-images.githubusercontent.com/122704850/226780777-e78d9fd0-20e9-4555-9579-5a7d6ca3e141.png" style="width:416px">
 											<h3>traveling with leaflet</h3>
 											<p>Through ajax and you can click on every state and every city without changing pages and it can calculate the distance and router if you give it start and end point.</p>
@@ -330,7 +330,7 @@
 												<li><a href="usa.html" class="button" target=”_blank”>Demo</a></li>
 											</ul>
 										</article>
-										<article>
+										<article data-filter="Python">
 											<img src="images/kkbox.jpg" style="width:416px">
 											<h3>KKBOX music platform</h3>
 											<p>Use kkbox open api, python, and mysql to create a client-server website</p>
@@ -338,7 +338,7 @@
 												<li><a href="kkbox/index.html" target=”_blank” class="button">Demo</a></li>
 											</ul>
 										</article>
-										<article>
+										<article data-filter="Flask">
 											<img src="https://user-images.githubusercontent.com/122704850/227730522-eae36e63-cb7e-4261-8865-fdcee3d55fb6.png" style="height:260px;width: 416px;">
 											<h3>Use api access MYSQL</h3>
 											<p>Use Flask and ajax Javascript to access kkobx database.</p>
@@ -346,7 +346,7 @@
 												<li><a href="https://drive.google.com/file/d/1WR5Glshww0K0qJQxXC01b6viO4Y-O-_8/view" target=”_blank” class="button">Demo</a></li>
 											</ul>
 										</article>
-										<article>
+										<article data-filter="Python">
 											<img src="images/twse.jpg" style="height:220px;width: 416px;" />
 											<h3>TW stock recommendation</h3>
 											<p>Use market average p/e ration and average dividend to decide wheather to recommand an individual stock or not.and push txt to line group.</p>
@@ -354,7 +354,7 @@
 												<li><a href="https://github.com/eddiemaximchen/twse.git" target=”_blank” class="button">Learn More on my github</a></li>
 											</ul>
 										</article>
-										<article>
+										<article data-filter="Docker-hadoop">
 											<img src="images/hadoop.jpg"/>
 											<h3>use docker to deploy a single mode hadoop</h3>
 											<p>docker pull a ubuntu image and set up java enviroment, ssh environment and hadoop environment to practice building a single mode hadoop.</p>
@@ -364,11 +364,11 @@
 										</article>
 									</div>
 								</section>
-                                <ul class="actions">
+                               					 <ul class="actions">
 									<li><a href="https://github.com/eddiemaximchen" class="button big">Learn More on my github</a></li>
 								</ul>
+							</div>
 						</div>
-					</div>
 
 				<!-- Sidebar -->
 					<div id="sidebar">
@@ -419,6 +419,26 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<!--要放在element之後才能找到-->
+			<script>
+				num = document.getElementById("posts").children.length;
+				posts=document.getElementById("posts");
+				function show(){
+					for(let i=0;i<num;i++){
+						if (work.value=='All'){
+							posts.children[i].style.display='block';
+						}
+						else{
+							if (work.value==posts.children[i].getAttribute('data-filter')){
+								posts.children[i].style.display='block';
+							}
+							else{
+								posts.children[i].style.display='none';
+							}
+						}
+					}
+				}
+			</script>
 
 	</body>
 </html>
