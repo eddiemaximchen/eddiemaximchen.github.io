@@ -98,13 +98,13 @@ body, input, select, textarea {
   line-height: 1.65; }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
-      font-size: 15pt; margin-left:3px;} }
+      font-size: 15pt;} }
   @media screen and (max-width: 1280px) {
     body, input, select, textarea {
-      font-size: 15pt; margin-left:3px;} }
+      font-size: 15pt;} }
   @media screen and (max-width: 360px) {
     body, input, select, textarea {
-      font-size: 12pt; margin-left:3px;} }
+      font-size: 12pt;} }
 
 a {
   -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
